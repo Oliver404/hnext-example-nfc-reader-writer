@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/oliverbotello/.ohos/config/default_example_nfc_read_write_wG5-wjUGNvJB8WZjyPKa14DmPHT6dTCmfFbQygGr1L0=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B768F03E672B20050F571430B5F5648D05AFA02494F14F552B523E168B6CA89995B86A1E1629E20",
+          "profile": "/Users/oliverbotello/.ohos/config/default_example_nfc_read_write_wG5-wjUGNvJB8WZjyPKa14DmPHT6dTCmfFbQygGr1L0=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/oliverbotello/.ohos/config/default_example_nfc_read_write_wG5-wjUGNvJB8WZjyPKa14DmPHT6dTCmfFbQygGr1L0=.p12",
+          "storePassword": "0000001BFD1EDABD880EDA9375BCABCFD913033C7DE872D0A8875B2B7EB9E090694FDB41F64F4260FD43BB"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.1(21)",
+        "compatibleSdkVersion": "6.0.1(21)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "watch",
+      "srcPath": "./watch",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
